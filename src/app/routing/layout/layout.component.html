@@ -1,0 +1,10 @@
+<raa-navigation></raa-navigation>
+<div class="container">
+  <ng-container *ngIf="state === LayoutState.Layout">
+    <raa-visitor-identification></raa-visitor-identification>
+    <sc-placeholder  name="jss-main" [rendering]="route"></sc-placeholder>
+  </ng-container>
+
+  <raa-not-found *ngIf="state === LayoutState.NotFound" [errorContextData]="errorContextData"></raa-not-found>
+  <raa-server-error *ngIf="state === LayoutState.Error"></raa-server-error>
+</div>

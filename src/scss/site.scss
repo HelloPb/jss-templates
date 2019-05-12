@@ -1,0 +1,15 @@
+//Remember to prepend 'rarc-' for all custom css class names created by RAA team
+.raac-example {
+
+    background-color: $primary;
+    color: $primary-contrast;
+
+    &:active {
+        background-color: $primary-shade;
+    }
+
+    &:hover {
+        background-color: $primary-tint;
+    }
+    
+}

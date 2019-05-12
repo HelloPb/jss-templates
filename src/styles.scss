@@ -1,0 +1,32 @@
+a[target='_blank']:after {
+  content: '\1F5D7'
+}
+
+.logo {
+  background-image: url('/assets/images/sc_logo.png');
+  display: block;
+  height: 51px;
+  width: 204px;
+}
+
+/*
+  Hides Sitecore Experience Editor markup,
+  if you run the app in connected mode while the Sitecore cookies
+  are set to edit mode.
+*/
+.scChromeData, .scpm { display: none !important; }
+
+@import './scss/root.scss';
+@import './scss/components/button.scss';
+@import './scss/components/checkbox.scss';
+@import './scss/components/form-group.scss';
+@import './scss/components/label.scss';
+@import './scss/components/link.scss';
+@import './scss/components/radiobutton.scss';
+@import './scss/components/selectbox.scss';
+@import './scss/components/tab.scss';
+@import './scss/components/textbox.scss';
+@import './scss/site.scss';
+@import './scss/util.scss';
+@import './scss/override.scss'; 
+
